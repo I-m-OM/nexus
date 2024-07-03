@@ -33,7 +33,7 @@ function Experience() {
       margin-top: 0.5rem;
       font-weight: 400;
       font-size: 1.5rem;
-      font-family: brush script mt;
+      font-family: "BrushScriptOpti-Regular", brush script mt;
       color: ${({ theme }) => theme.colors.master};
     }
 

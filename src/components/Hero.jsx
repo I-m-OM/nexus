@@ -9,7 +9,7 @@ function Hero() {
     h5 {
       margin-top: 7rem;
       text-transform: uppercase;
-      font-family: arial black;
+      font-family: "ariblk", arial black, impact;
       font-size: 2rem;
       background: ${({ theme }) => theme.colors.textGradient};
       -webkit-background-clip: text;
@@ -18,7 +18,7 @@ function Hero() {
 
     h1 {
       font-weight: 200;
-      font-family: Brush Script MT, comic sans MS;
+      font-family: "BrushScriptOpti-Regular", Brush Script MT, comic sans MS;
       letter-spacing: 0.2rem;
       font-size: 7rem;
       background: ${({ theme }) => theme.colors.textGradient};
@@ -43,7 +43,7 @@ function Hero() {
       border-radius: 0.5rem;
       border: none;
       text-decoration: none;
-      font-family: arial black;
+      font-family: "ariblk", arial black, impact;
       background: ${({ theme }) => theme.colors.textGradient};
       color: ${({ theme }) => theme.colors.background};
 
