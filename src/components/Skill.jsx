@@ -24,6 +24,10 @@ function Skill() {
       margin: 5rem auto;
       width: 90%;
     }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      width: 85%;
+    }
   `;
 
   return (

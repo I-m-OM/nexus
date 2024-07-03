@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Experience from "../components/Experience";
 import Background from "../components/Background";
 import Skill from "../components/Skill";
+import Achieve from "../components/Achieve";
 
 function Home() {
   const Hr = styled.hr`
@@ -24,6 +25,9 @@ function Home() {
       <Experience />
       <Background />
       <Skill />
+      <Hr />
+      <Achieve />
+      <Hr />
     </>
   );
 }

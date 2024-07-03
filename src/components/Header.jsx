@@ -51,7 +51,7 @@ function Header() {
         </li>
         <li>
           <NavLink className="nav-link" to="/contact">
-            hire me
+            contact
           </NavLink>
         </li>
       </ul>

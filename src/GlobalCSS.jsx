@@ -72,6 +72,18 @@ grid-template-columns: 1fr;
 grid-template-columns: 1fr 1fr;
 }
 
+.grid-two-uneven {
+grid-template-columns: 1fr 2fr;
+}
+
+.grid-three {
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-three-uneven {
+grid-template-columns: 1fr 1fr 2fr;
+}
+
 .grid-four {
 grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -82,7 +94,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 @media(max-width: ${({ theme }) => theme.media.mobile}) {
 
-    .grid-two {
+    .grid-two, .grid-two-uneven {
+    grid-template-columns: 1fr;
+    }
+    
+    .grid-three, .grid-three-uneven {
     grid-template-columns: 1fr;
     }
 

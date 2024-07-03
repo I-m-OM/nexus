@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button";
 
 function Hero() {
   const InfoContainer = styled.div`
@@ -36,23 +37,6 @@ function Hero() {
       margin-top: 2rem;
     }
 
-    button {
-      margin-top: 3rem;
-      padding: 0.5rem 2rem;
-      font-size: 2rem;
-      border-radius: 0.5rem;
-      border: none;
-      text-decoration: none;
-      font-family: "ariblk", arial black, impact;
-      background: ${({ theme }) => theme.colors.textGradient};
-      color: ${({ theme }) => theme.colors.background};
-
-      &:hover {
-        cursor: pointer;
-        background: ${({ theme }) => theme.colors.slave};
-      }
-    }
-
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       h5 {
         margin-top: 10rem;
@@ -81,7 +65,7 @@ function Hero() {
           unde? Veritatis animi facere ea velit a, impedit modi, deserunt
           tenetur, quidem similique laudantium?
         </p>
-        <button>Resume</button>
+        <Button text="Resume" />
       </div>
     </InfoContainer>
   );
