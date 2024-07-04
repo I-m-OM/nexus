@@ -58,14 +58,18 @@ function Hero() {
         <h5>Hello! this is</h5>
         <h1>Om Chaudhary</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-          corporis architecto rem distinctio aliquam, ad, est facere, aut fuga
-          id delectus debitis fugiat optio quis eum quas mollitia voluptatem
-          amet praesentium error quisquam explicabo necessitatibus accusantium
-          unde? Veritatis animi facere ea velit a, impedit modi, deserunt
-          tenetur, quidem similique laudantium?
+          I am 3rd year B.Tech undergrad of IIT - Jammu, Electrical Engineering
+          Department 2026 batch. I have keen interest in Competitve Programming
+          and have been practising DSA since 2nd sem. My tech stacks includes
+          Java for Backend, and JavaScript for Frontend. I am open to work and
+          relocate for the same. Currently looking for internship oppurtunities,
+          below is my resume attached. You can refer to "CONTACT" page in order
+          to connect with me, Thanks.
         </p>
-        <Button text="Resume" />
+        <Button
+          text="Resume"
+          address="https://drive.google.com/file/d/1CaBWbuk3yF4erhM8Za0Y_Zna3ABfBZtu/view?usp=sharing"
+        />
       </div>
     </InfoContainer>
   );

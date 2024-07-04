@@ -10,8 +10,8 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightOne, lightTwo, darkOne, darkTwo } from "./Theme";
 import { GlobalStyles } from "./GlobalCSS";
 import { IoIosPartlySunny } from "react-icons/io";
-import { IoSunny } from "react-icons/io5";
-import { FaMoon, FaCloudMoon } from "react-icons/fa";
+import { IoMoon, IoSunny } from "react-icons/io5";
+import { FaCloudMoon } from "react-icons/fa";
 import { RxBorderDashed } from "react-icons/rx";
 
 function App() {
@@ -33,28 +33,36 @@ function App() {
 
   const ThemeContainer = styled.div`
     width: 100%;
-    padding: 0;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     z-index: 100;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    overflow: hidden;
+    padding: 0;
 
-    button,
     span {
-      padding: 1rem 0 0 0;
-      height: 2rem;
-      width: 2rem;
-      font-size: 1.5rem;
-      background-color: rgba(0, 0, 0, 0);
+      text-align: center;
       color: ${({ theme }) => theme.colors.slave};
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0;
     }
 
-    button {
+    .lightOne,
+    .lightTwo,
+    .darkOne,
+    .darkTwo {
+      text-align: center;
       border: none;
       text-decoration: none;
+      color: ${({ theme }) => theme.colors.slave};
+      margin: 0;
+      padding: 0;
 
       &:hover {
         color: ${({ theme }) => theme.colors.master};
@@ -102,7 +110,7 @@ function App() {
             className="darkTwo"
             onClick={() => HandleThemeChange(darkTwo)}
           >
-            <FaMoon />
+            <IoMoon />
           </button>
         </ThemeContainer>
         <Routes>

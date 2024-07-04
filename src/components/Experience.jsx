@@ -101,7 +101,7 @@ function Experience() {
           <p>
             Devised the algorithm to calculate Fractal Dimension of 2D matrix
             and images (N x N). Collected the FD data for many subjects to help
-            in emotion & its intensity identification. Worked in a team on 3,
+            in emotion & its intensity identification. Worked in a team of 3,
             utilized the Indian Affective Picture Database.
           </p>
         </VerticalTimelineElement>

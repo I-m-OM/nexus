@@ -62,6 +62,8 @@ function Footer() {
       .map-container {
         overflow: hidden;
         border-radius: 1rem;
+        border: 0;
+        box-shadow: 1px 1px 4px 1px ${({ theme }) => theme.colors.dull};
       }
 
     }
@@ -100,6 +102,22 @@ function Footer() {
       &:hover {
         cursor: pointer;
         color: ${({ theme }) => theme.colors.slave};
+      }
+    }
+
+    button a {
+      text-decoration: none;
+
+      &:link,
+      &:visited {
+        color: ${({ theme }) => theme.colors.master};
+      }
+
+      &:hover,
+      &:active {
+        color: ${({ theme }) => theme.colors.master};
+        opacity: 0.8;
+        cursor: pointer;
       }
     }
 
@@ -193,12 +211,22 @@ function Footer() {
         </div>
       </div>
       <center>
-        <button>Resume</button>
+        <button>
+          <a href="https://drive.google.com/file/d/1CaBWbuk3yF4erhM8Za0Y_Zna3ABfBZtu/view?usp=sharing">
+            Resume
+          </a>
+        </button>
       </center>
       <div className="social">
-        <SiGithub className="icon" />
-        <SiLinkedin className="icon" />
-        <SiInstagram className="icon" />
+        <a href="https://www.linkedin.com/in/om-chaudhary-921a691b6/">
+          <SiLinkedin className="icon" />
+        </a>
+        <a href="https://github.com/I-m-OM">
+          <SiGithub className="icon" />
+        </a>
+        <a href="https://www.instagram.com/i.m.om_16/">
+          <SiInstagram className="icon" />
+        </a>
       </div>
       <div className="info">Designed & Developed by Om Chaudhary.</div>
     </Foot>
