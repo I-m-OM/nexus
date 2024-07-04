@@ -70,7 +70,7 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Header />
-        <ThemeContainer>
+        <ThemeContainer id="intro">
           <button
             className="lightOne"
             onClick={() => HandleThemeChange(lightOne)}

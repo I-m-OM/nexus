@@ -31,7 +31,7 @@ function Skill() {
   `;
 
   return (
-    <Div>
+    <Div id="skills">
       <Heading title="Programming Arsenal" subTitle="- My Skills" />
       <div className="grid grid-five">
         <SkillCard

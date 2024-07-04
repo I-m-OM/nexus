@@ -26,7 +26,7 @@ function Achieve() {
   `;
 
   return (
-    <Div>
+    <Div id="achieve">
       <Heading title="My Achievements" subTitle="- More About Me" />
       <SubHeading title="Education" />
       <div className="grid grid-three">
@@ -39,6 +39,7 @@ function Achieve() {
         <Card value="92.6%" title="2020" info="Class - X @ DPS, Mbd" />
       </div>
 
+      <div id="other"></div>
       <SubHeading title="Scholastic" />
       <div className="list-container">
         <ListItem

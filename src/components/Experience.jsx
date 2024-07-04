@@ -80,7 +80,7 @@ function Experience() {
   };
 
   return (
-    <Div>
+    <Div id="experience">
       <Heading title="Intern & Participations" subTitle="- My Experience" />
       <VerticalTimeline lineColor={theme.colors.textGradient}>
         <VerticalTimelineElement

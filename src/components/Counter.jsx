@@ -10,6 +10,7 @@ function Counter() {
     gap: 10%;
 
     .child {
+      width: 90%;
       gap: 0rem;
       text-align: center;
       align-items: center;
@@ -33,7 +34,11 @@ function Counter() {
     }
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      margin-top: 8rem;
+      width: 80%;
+      row-gap: 0%;
+
+      .child {
+      }
     }
   `;
 

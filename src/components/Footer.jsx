@@ -1,7 +1,6 @@
 import React from "react";
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import styled from "styled-components";
-import Button from "./Button";
 
 function Footer() {
   const Foot = styled.div`
@@ -34,9 +33,6 @@ function Footer() {
 
       h3 {
         margin-bottom: 1.5rem;
-      }
-
-      .highlight {
         font-weight: 400;
       }
 
@@ -46,9 +42,20 @@ function Footer() {
         letter-spacing: 0.1rem;
         color: ${({ theme }) => theme.colors.dull};
 
-        &:hover {
-          opacity: 0.8;
-          cursor: pointer;
+        a {
+          text-decoration: none;
+
+          &:link,
+          &:visited {
+            color: ${({ theme }) => theme.colors.dull};
+          }
+
+          &:hover,
+          &:active {
+            color: ${({ theme }) => theme.colors.dull};
+            opacity: 0.8;
+            cursor: pointer;
+          }
         }
       }
 
@@ -78,6 +85,23 @@ function Footer() {
       }
     }
 
+    button {
+      margin-top: 3rem;
+      padding: 0.5rem 2rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      text-decoration: none;
+      font-family: "BrushScriptOpti-regular";
+      background: rgba(0,0,0,0);
+      color: ${({ theme }) => theme.colors.master};
+      border: 0.1rem solid ${({ theme }) => theme.colors.master};
+
+      &:hover {
+        cursor: pointer;
+        color: ${({ theme }) => theme.colors.slave};
+      }
+    }
 
     .info {
       font-size: 1rem;
@@ -88,7 +112,43 @@ function Footer() {
       text-align: center;
       color: ${({ theme }) => theme.colors.secFont};
     }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      .grid {
+        row-gap: 2rem;
+
+        h3 {
+          font-size: 0.8rem;
+          letter-spacing: 0.2rem;
+          font-weight: 500;
+        }
+
+        li {
+          font-size: 0.8rem;
+        }
+      }
+
+    }
   `;
+
+  // can not use due to mpa
+
+  // const scrollToElement = (elemented) => {
+  //   var element = document.getElementById(elemented);
+  //   var headerOffset = 60;
+  //   var elementPosition = element.getBoundingClientRect().top;
+  //   var offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+  //   window.scrollTo({
+  //     top: offsetPosition,
+  //     behavior: "smooth",
+  //   });
+
+  //   // document
+  //   //   .getElementById(element)
+  //   //   ?.scrollIntoView({ behavior: "smooth", block: "top" });
+  // };
+
   return (
     <Foot>
       <div className="grid grid-three-uneven">
@@ -96,11 +156,21 @@ function Footer() {
           <h3>
             <span className="highlight">home</span>
           </h3>
-          <li>Intro</li>
-          <li>Experience</li>
-          <li>Skills</li>
-          <li>Education</li>
-          <li>Other Info</li>
+          <li>
+            <a href="/#intro">Intro</a>
+          </li>
+          <li>
+            <a href="/#experience">Experience</a>
+          </li>
+          <li>
+            <a href="/#skills">Skills</a>
+          </li>
+          <li>
+            <a href="/#achieve">Education</a>
+          </li>
+          <li>
+            <a href="/#other">Other Info</a>
+          </li>
         </ul>
         <ul className="link-container">
           <h3>
@@ -123,7 +193,7 @@ function Footer() {
         </div>
       </div>
       <center>
-        <Button text="Resume" />
+        <button>Resume</button>
       </center>
       <div className="social">
         <SiGithub className="icon" />
