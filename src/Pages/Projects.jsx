@@ -6,6 +6,7 @@ import { GiNinjaHead } from "react-icons/gi";
 import { IoIosImages } from "react-icons/io";
 import { IoCalendarNumber } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
+import Background from "../components/Background";
 
 function Projects() {
   const Div = styled.div`
@@ -35,6 +36,7 @@ function Projects() {
         skills="Frontend - React ||  Backend - Java SpringBoot || DB - MongoDb"
         first={false}
       />
+      <Background />
       <Project
         topLeft="03"
         icon={<FaLaptopCode />}

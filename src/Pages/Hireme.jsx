@@ -12,6 +12,7 @@ import {
 import styled from "styled-components";
 import Heading from "../components/Heading";
 import Hr from "../components/Hr";
+import Background from "../components/Background";
 
 function Hireme() {
   const Div = styled.div`
@@ -83,7 +84,21 @@ function Hireme() {
           font-size: 2rem;
           width: 3rem;
           text-align: center;
-          color: ${({ theme }) => theme.colors.master};
+
+          a {
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+              color: ${({ theme }) => theme.colors.master};
+            }
+
+            &:hover,
+            &:active {
+              color: ${({ theme }) => theme.colors.slave};
+              cursor: pointer;
+            }
+          }
         }
       }
     }
@@ -154,34 +169,51 @@ function Hireme() {
         <button type="submit">Send</button>
       </form>
       <Hr />
+      <Background />
       <Heading title="Social Handles -" subTitle="- Important links" />
       <div className="link-container">
         <div className="my-email">im.om.chaudhary@gmail.com</div>
         <div className="icon-container">
           <center>
             <div className="icon">
-              <SiLinkedin />
+              <a href="https://www.linkedin.com/in/om-chaudhary-921a691b6/">
+                <SiLinkedin />
+              </a>
             </div>
             <div className="icon">
-              <SiGithub />
+              <a href="https://github.com/I-m-OM">
+                <SiGithub />
+              </a>
             </div>
             <div className="icon">
-              <SiInstagram />
+              <a href="https://www.instagram.com/i.m.om_16/">
+                <SiInstagram />
+              </a>
             </div>
             <div className="icon">
-              <SiLeetcode />
+              <a href="https://leetcode.com/u/I_m_OM/">
+                <SiLeetcode />
+              </a>
             </div>
             <div className="icon">
-              <SiCodechef />
+              <a href="https://www.codechef.com/users/i_m_om">
+                <SiCodechef />
+              </a>
             </div>
             <div className="icon">
-              <SiCodeforces />
+              <a href="https://codeforces.com/profile/I.m.OM">
+                <SiCodeforces />
+              </a>
             </div>
             <div className="icon">
-              <SiFacebook />
+              <a href="https://m.facebook.com/om.chaudhary.9634/">
+                <SiFacebook />
+              </a>
             </div>
             <div className="icon">
-              <SiX />
+              <a href="https://x.com/ImOM_1611">
+                <SiX />
+              </a>
             </div>
           </center>
         </div>
