@@ -13,6 +13,7 @@ import { IoIosPartlySunny } from "react-icons/io";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import { FaCloudMoon } from "react-icons/fa";
 import { RxBorderDashed } from "react-icons/rx";
+import Error from "./Pages/Error";
 
 function App() {
   // theme state
@@ -117,6 +118,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Hireme />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>

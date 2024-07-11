@@ -65,6 +65,9 @@ function Hero() {
           relocate for the same. Currently looking for internship oppurtunities,
           below is my resume attached. You can refer to "CONTACT" page in order
           to connect with me, Thanks.
+          <br />
+          **The sun/moon buttons at the top are theme switcher, try other
+          light/dark mode if u like**
         </p>
         <Button
           text="Resume"

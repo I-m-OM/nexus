@@ -10,7 +10,7 @@ function Counter() {
     gap: 10%;
 
     .child {
-      width: 90%;
+      width: 100%;
       gap: 0rem;
       text-align: center;
       align-items: center;
@@ -25,7 +25,7 @@ function Counter() {
 
       .child-data {
         font-size: 2.5rem;
-        font-family: impact;
+        font-family: "ariblk";
 
         background: ${({ theme }) => theme.colors.gradient};
         -webkit-background-clip: text;
@@ -34,8 +34,9 @@ function Counter() {
     }
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      width: 80%;
+      width: 90%;
       row-gap: 0%;
+      col-gap: 10%;
 
       .child {
       }
