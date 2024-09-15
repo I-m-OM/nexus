@@ -10,14 +10,15 @@ This portfolio was built with a focus on **modern web technologies** to ensure a
 
 
 - **Light Mode:**  
-![Image Description](public/first.png)
-![Image Description](public/second.png)
+![Image Description](first)
+![Image Description](second)
 
 - **Dark Mode:**  
-![Image Description](public/third.png)
+![Image Description](third)
 
 - **Adapt to phone:**  
-![Image Description](public/fourth.png)
+![Image Description](fourth)
+![Image Description](fifth)
 
 ## 🛠️ Tech Stack
 
