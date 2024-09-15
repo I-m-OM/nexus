@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for my personal **Portfolio Website**, where I showcase my skills, projects, and achievements. You can visit the live site [here](https://om-chaudhary.netlify.app/).
 
-## Available Scripts
+## 🚀 Overview
 
-In the project directory, you can run:
+This portfolio was built with a focus on **modern web technologies** to ensure a smooth and dynamic user experience. The website is responsive, customizable, and optimized for performance.
 
-### `npm start`
+## 💡 ScreenShots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Light Mode:**  
+![Image Description](public/first.png)
+![Image Description](public/second.png)
 
-### `npm test`
+- **Dark Mode:**  
+![Image Description](public/third.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Adapt to phone:**  
+![Image Description](public/fourth.png)
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:**  
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+  I used **React.js** to build the website's user interface, enabling dynamic rendering and smooth navigation across pages. React's component-based architecture made it easy to organize and manage the website's different sections.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Deployment:**  
+  ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)  
+  The website is hosted on **Netlify**, providing continuous deployment from this GitHub repository and ensuring fast load times.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Styling:**  
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
+  Custom styles were implemented using **CSS3**, focusing on a clean, modern look with a light and dark theme toggle.
 
-### `npm run eject`
+- **Version Control:**  
+  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
+  This project uses **Git** for version control, and all code is tracked and managed through GitHub.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Single Page Application (SPA):** Built as an SPA with React, the site offers a fast and seamless browsing experience.
+- **Customizable Theme:** A light and dark theme switcher was implemented to enhance user comfort.
+- **Responsive Design:** The layout adapts to different screen sizes and devices using CSS Flexbox and Grid.
+- **Optimized Performance:** Lazy loading and code splitting were used to improve page load times and performance.
+  
+## 🚧 Development Process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The development of this portfolio was an iterative process:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Design Phase:**  
+   I started with a rough design on Figma, focusing on a minimal yet functional layout that would highlight my work effectively.
 
-## Learn More
+2. **React Integration:**  
+   I split the website into reusable React components for the header, projects section, skills display, and contact form. This modularity ensured easy maintenance and scalability.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **State Management:**  
+   React's state management was used for controlling the theme switcher and navigation features. For the theme switcher, I stored the user's preference in `localStorage` to persist between sessions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Deployment & Continuous Integration:**  
+   Netlify handles automatic deployment whenever I push new updates to this repository, ensuring the live site is always up to date.
 
-### Code Splitting
+## 📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🔗 Live Website
 
-### Making a Progressive Web App
+Visit the portfolio here: [https://om-chaudhary.netlify.app/](https://om-chaudhary.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork the repository or contribute by submitting a pull request!
