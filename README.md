@@ -16,9 +16,9 @@ This portfolio was built with a focus on **modern web technologies** to ensure a
 - **Dark Mode:**  
 ![Image Description](third)
 
-- **Adapt to phone:**  
+- **On mobile scrren:**  
 ![Image Description](fourth)
-![Image Description](fifth)
+![Image Description](fifth.png)
 
 ## 🛠️ Tech Stack
 
@@ -41,7 +41,7 @@ This portfolio was built with a focus on **modern web technologies** to ensure a
 ## ⚙️ Features
 
 - **Single Page Application (SPA):** Built as an SPA with React, the site offers a fast and seamless browsing experience.
-- **Customizable Theme:** A light and dark theme switcher was implemented to enhance user comfort.
+- **Customizable Theme:** A light and dark theme switcher was implemented to enhance user comfort, offering two light and two dark modes according to the user's comfort.
 - **Responsive Design:** The layout adapts to different screen sizes and devices using CSS Flexbox and Grid.
 - **Optimized Performance:** Lazy loading and code splitting were used to improve page load times and performance.
   
