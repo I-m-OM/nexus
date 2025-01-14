@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
-import { Happiness, Sadness, Anger, Disgust, Fear, Shock } from "./Theme";
+import { Hapiness, Sadness, Anger, Disgust, Fear, Shock } from "./Theme";
 import { GlobalStyles } from "./GlobalCSS";
 // import { IoIosPartlySunny } from "react-icons/io";
 // import { IoMoon, IoSunny } from "react-icons/io5";
@@ -15,19 +15,57 @@ import { GlobalStyles } from "./GlobalCSS";
 // import { RxBorderDashed } from "react-icons/rx";
 import Error from "./Pages/Error";
 
-
 function App() {
   // theme state
   const [selectedTheme, setSelectedTheme] = useState(Shock);
 
   const data = {
     Sadness: 0.25,
-    Anger: 0.25,
-    Confusion: 0.25,
-    Desperation: 0.25,
+    Anger: 0.26,
+    Confusion: 0.27,
+    Happiness: 0.25,
+  };
+  const getMaxKey = (data) => {
+    return Object.entries(data).reduce(
+      (max, [key, value]) => {
+        return value > max.value ? { key, value } : max;
+      },
+      { key: "", value: -Infinity }
+    ).key;
   };
 
-  
+  useEffect(() => {
+    // Find the theme key with the highest value
+    const maxKey = getMaxKey(data);
+
+    // Use a switch statement or if-else to select the correct theme based on the maxKey
+    switch (maxKey) {
+      case "Hapiness" || "Pride":
+        setSelectedTheme(Hapiness);
+        break;
+      case "Sadness" || "Satifaction":
+        setSelectedTheme(Sadness);
+        break;
+      case "Anger":
+        setSelectedTheme(Anger);
+        break;
+      case "Disgust" || "Neutral":
+        setSelectedTheme(Disgust);
+        break;
+      case "Fear" || "Confusion":
+        setSelectedTheme(Fear);
+        break;
+      case "Shock" || "Desperation":
+        setSelectedTheme(Shock);
+        break;
+      default:
+        setSelectedTheme(Fear); // Default theme in case of unexpected value
+        break;
+    }
+
+    // Set the selected theme
+  }, [data]);
+  // setSelectedTheme(maxKey.key);
 
   // react hook to get the theme selected by the user that is saved in local storage
   // useEffect(() => {

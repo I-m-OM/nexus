@@ -1,4 +1,4 @@
-export const Happiness = {
+export const Hapiness = {
   colors: {
     master: "#FFD700",
     slave: "#FFFF00",

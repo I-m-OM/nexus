@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import Heading from "./Heading";
 
 // Register Chart.js components
 
@@ -37,17 +38,16 @@ const Box = styled.div`
   padding: 5px 10px;
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 40rem;
   width: 40%;
   // resize: none;
   color: rgba(255, 255, 255, 0.6);
 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
     width: 90%;
-    height: 30rem;
   }
 `;
 
@@ -66,8 +66,17 @@ function Plot({ data }) {
       },
     ],
   };
+  const getMaxKey = (data) => {
+    return Object.entries(data).reduce(
+      (max, [key, value]) => {
+        return value > max.value ? { key, value } : max;
+      },
+      { key: "", value: -Infinity }
+    ).key;
+  };
   return (
     <Box>
+      <Heading subTitle={getMaxKey(data)} />
       <Doughnut data={dataDisplay} />
     </Box>
   );
