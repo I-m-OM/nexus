@@ -35,7 +35,7 @@ const Box = styled.div`
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1),
     0 6px 20px 0 rgba(255, 255, 255, 0.09);
   outline: none;
-  padding: 5px 10px;
+  padding: 0rem 0rem 1rem 0rem;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ function Plot({ data }) {
   };
   return (
     <Box>
-      <Heading subTitle={getMaxKey(data)} />
+      <Heading title={getMaxKey(data)} />
       <Doughnut data={dataDisplay} />
     </Box>
   );

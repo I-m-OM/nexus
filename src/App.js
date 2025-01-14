@@ -20,7 +20,7 @@ function App() {
   const [selectedTheme, setSelectedTheme] = useState(Shock);
 
   const data = {
-    Sadness: 0.25,
+    Sadness: 0.29,
     Anger: 0.26,
     Confusion: 0.27,
     Happiness: 0.25,
