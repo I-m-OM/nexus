@@ -5,10 +5,11 @@ import styled from "styled-components";
 const NavHeader = styled.header`
   width: 100%;
   height: 3rem;
-  background-color: ${(props) => props.theme.colors.font};
+  background: ${(props) => props.theme.colors.gradient};
   position: fixed;
   top: 0;
   z-index: 1;
+  transition: all 0.9s ease-in-out;
 
   ul {
     height: 3rem;
@@ -24,13 +25,13 @@ const NavHeader = styled.header`
     font-size: 0.7rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.colors.master};
+    color: ${({ theme }) => theme.colors.font};
     letter-spacing: 0.15rem;
     font-weight: 700;
 
     &:hover,
     &:active {
-      color: ${({ theme }) => theme.colors.slave};
+      color: ${({ theme }) => theme.colors.dull};
     }
   }
 `;
@@ -44,16 +45,16 @@ function Header() {
             home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink className="nav-link" to="/projects">
-            projects
+            about us
           </NavLink>
         </li>
         <li>
           <NavLink className="nav-link" to="/contact">
-            contact
+            signup
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </NavHeader>
   );

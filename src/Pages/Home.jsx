@@ -6,20 +6,16 @@ import Background from "../components/Background";
 import Skill from "../components/Skill";
 import Achieve from "../components/Achieve";
 import Hr from "../components/Hr";
+import Flexbox from "../components/Flexbox";
+import Plot from "../components/Plot";
 
-function Home() {
+function Home({ data }) {
   return (
     <>
-      <Hero />
-      <Counter />
+      <Flexbox />
       <Hr />
       <Background />
-      <Experience />
-      <Background />
-      <Skill />
-      <Hr />
-      <Achieve />
-      <Hr />
+      <Plot data={data}/>
     </>
   );
 }

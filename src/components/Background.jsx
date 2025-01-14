@@ -12,7 +12,7 @@ const Div = styled.div`
     left: -20rem;
     height: 20rem;
     opacity: 0.1;
-    background-color: ${({ theme }) => theme.colors.font};
+    background-color: ${({ theme }) => theme.colors.master};
     z-index: -2;
   }
 

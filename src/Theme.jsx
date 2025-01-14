@@ -1,60 +1,95 @@
-export const lightOne = {
+export const Happiness = {
   colors: {
-    master: "rgb(249, 83, 198)",
-    slave: "rgb(185, 29, 115)",
-    background: "#fff",
-    texture: "rgb(200,200,200)",
-    card: "rgba(15, 15, 15, 0.6)",
-    dull: "#ddd",
-    font: "#111",
-    secFont: "#888",
-    gradient: "linear-gradient(to right, #f953c6, #b91d73)",
-    textGradient: "linear-gradient(to bottom, #f953c6, #b91d73)",
-  },
-  media: { mobile: "768px", tab: "1180px" },
-};
-export const lightTwo = {
-  colors: {
-    master: "rgb(0, 198, 255)",
-    slave: "rgb(0, 114, 255)",
-    background: "#fff",
-    texture: "rgb(200,200,200)",
-    card: "rgba(15, 15, 15, 0.6)",
-    dull: "#ddd",
-    font: "#111",
-    secFont: "#888",
-    gradient: "linear-gradient(to right, #00c6ff, #0072ff)",
-    textGradient: "linear-gradient(to bottom, #00ccff, #0066ff)",
-  },
-  media: { mobile: "768px", tab: "1180px" },
-};
-export const darkOne = {
-  colors: {
-    master: "rgb(0, 176, 155)",
-    slave: "rgb(150, 201, 61)",
+    master: "#FFD700",
+    slave: "#FFFF00",
     background: "#111",
     texture: "rgb(60,60,60)",
     card: "rgba(255, 255, 255, 0.6)",
     dull: "#333",
     font: "#fff",
     secFont: "#777",
-    gradient: "linear-gradient(to right, #00b09b, #96c93d)",
+    gradient: "linear-gradient(to right, #FFD700, #FFFF00)",
     textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
   },
   media: { mobile: "768px", tab: "1180px" },
 };
-export const darkTwo = {
+
+export const Sadness = {
   colors: {
-    master: "rgb(240, 152, 25)",
-    slave: "rgb(237, 222, 93)",
+    master: "#4286f4",
+    slave: "#6dd5ed",
     background: "#111",
     texture: "rgb(60,60,60)",
     card: "rgba(255, 255, 255, 0.6)",
     dull: "#333",
     font: "#fff",
     secFont: "#777",
-    gradient: "linear-gradient(to right, #f09819, #edde5d)",
-    textGradient: "linear-gradient(to bottom, #ffff00, #ff6600)",
+    gradient: "linear-gradient(to right, #4286f4, #6dd5ed)",
+    textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
+  },
+  media: { mobile: "768px", tab: "1180px" },
+};
+
+export const Anger = {
+  colors: {
+    master: "#c31432",
+    slave: "#ff5e62",
+    background: "#111",
+    texture: "rgb(60,60,60)",
+    card: "rgba(255, 255, 255, 0.6)",
+    dull: "#333",
+    font: "#fff",
+    secFont: "#777",
+    gradient: "linear-gradient(to right, #c31432, #ff5e62)",
+    textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
+  },
+  media: { mobile: "768px", tab: "1180px" },
+};
+
+export const Disgust = {
+  colors: {
+    master: "#11998e",
+    slave: "#38ef7d",
+    background: "#111",
+    texture: "rgb(60,60,60)",
+    card: "rgba(255, 255, 255, 0.6)",
+    dull: "#333",
+    font: "#fff",
+    secFont: "#777",
+    gradient: "linear-gradient(to right, #11998e, #38ef7d)",
+    textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
+  },
+  media: { mobile: "768px", tab: "1180px" },
+};
+
+export const Fear = {
+  colors: {
+    master: "#2c3e50",
+    slave: "#bdc3c7",
+    background: "#111",
+    texture: "rgb(60,60,60)",
+    card: "rgba(255, 255, 255, 0.6)",
+    dull: "#333",
+    font: "#fff",
+    secFont: "#777",
+    gradient: "linear-gradient(to right, #2c3e50, #bdc3c7)",
+    textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
+  },
+  media: { mobile: "768px", tab: "1180px" },
+};
+
+export const Shock = {
+  colors: {
+    master: "#AA076B",
+    slave: "#f953c6",
+    background: "#111",
+    texture: "rgb(60,60,60)",
+    card: "rgba(255, 255, 255, 0.6)",
+    dull: "#333",
+    font: "#fff",
+    secFont: "#777",
+    gradient: "linear-gradient(to right, #AA076B, #f953c6)",
+    textGradient: "linear-gradient(to bottom, #ccffcc, #009900)",
   },
   media: { mobile: "768px", tab: "1180px" },
 };
